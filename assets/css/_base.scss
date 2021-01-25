@@ -1,0 +1,31 @@
+$primaryColor: #E50914;
+$baseColor: #000000;
+$fontColor: #FFFFFF;
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'Roboto', sans-serif;
+  color: $fontColor;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  max-width: 100%;
+  position: relative;
+  font-size: 1.6rem;
+  background-color: $baseColor;
+}
+
+section {
+  border-bottom: .8rem solid #222222;
+}
+
+h1, h2 {
+  font-size: 5rem;
+}

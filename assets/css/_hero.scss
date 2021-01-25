@@ -1,0 +1,79 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+  background: url(../img/bg-hero.jpg) no-repeat center / cover;
+
+  &::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background: transparentize($baseColor, $amount: .5);
+    background-image: linear-gradient( to top,
+      transparentize($baseColor, $amount: 1) 70%,
+      transparentize($baseColor, $amount: .3) 100%
+    ), radial-gradient(50% 100%, transparentize($baseColor, $amount: 1) 50%, transparentize($baseColor, $amount: .5) 100%);
+  }
+
+  .hero-container {
+    margin-top: 8rem;
+    z-index: 3;
+    text-align: center;
+
+    h1 {
+      line-height: 110%;
+    }
+
+    h2 {
+      margin: 1.5rem 0 3rem;
+      font-size: 2.6rem;
+      font-weight: 400;
+    }
+
+    p {
+      margin: 2rem 0;
+      font-size: 1.9rem;
+    }
+
+    .hero-container-email {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 60px;
+
+      input[type="email"] {
+        min-width: 450px;
+        height: 100%;
+        padding: 1.5rem 1rem;
+        font-size: 1.6rem;
+        color: $baseColor;
+      }
+
+      .btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        border-radius: 0;
+        font-size: 2.6rem;
+
+        &:hover {
+          background-color: lighten($primaryColor, 5%);
+        }
+
+        img {
+          width: 1.5rem;
+          margin-left: 1rem;
+        }
+      }
+    }
+
+  }
+}
