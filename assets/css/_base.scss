@@ -29,3 +29,46 @@ section {
 h1, h2 {
   font-size: 5rem;
 }
+
+.container-email {
+  display: block;
+  margin: 0 auto;
+
+  p {
+    margin-bottom: 2rem;
+    font-size: 1.9rem;
+  }
+
+  .container-email-form {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    height: 60px;
+
+    input[type="email"] {
+      min-width: 450px;
+      height: 100%;
+      padding: 1.5rem 1rem;
+      font-size: 1.6rem;
+      color: $baseColor;
+    }
+
+    .btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      border-radius: 0;
+      font-size: 2.6rem;
+
+      &:hover {
+        background-color: lighten($primaryColor, 5%);
+      }
+
+      img {
+        width: 1.5rem;
+        margin-left: 1rem;
+      }
+    }
+  }
+}

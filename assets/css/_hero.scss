@@ -36,44 +36,5 @@
       font-size: 2.6rem;
       font-weight: 400;
     }
-
-    p {
-      margin: 2rem 0;
-      font-size: 1.9rem;
-    }
-
-    .hero-container-email {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 60px;
-
-      input[type="email"] {
-        min-width: 450px;
-        height: 100%;
-        padding: 1.5rem 1rem;
-        font-size: 1.6rem;
-        color: $baseColor;
-      }
-
-      .btn {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-        border-radius: 0;
-        font-size: 2.6rem;
-
-        &:hover {
-          background-color: lighten($primaryColor, 5%);
-        }
-
-        img {
-          width: 1.5rem;
-          margin-left: 1rem;
-        }
-      }
-    }
-
   }
 }

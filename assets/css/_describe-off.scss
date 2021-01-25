@@ -1,0 +1,48 @@
+.describe-off {
+  .describe-media {
+    img {
+      width: 500px;
+    }
+
+    .describe-downloading {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 330px;
+      height: 100px;
+      transform: translateX(100px);
+      border: 2px solid rgba(255, 255, 255, .25);
+      border-radius: .75rem;
+
+      .describe-downloading-cont {
+        display: flex;
+        align-items: center;
+      }
+
+      .describe-downloading-inf {
+        margin-right: 8rem;
+        margin-left: 1.5rem;
+
+        span {
+          display: block;
+          font-weight: 500;
+
+          &:nth-of-type(2) {
+            font-size: 1.4rem;
+            color: #0071eb;
+          }
+        }
+      }
+
+      img.describe-downloading-boxshot {
+        width: 51px;
+        height: 72px;
+      }
+
+      img.describe-downloading-loading {
+        width: 48px;
+        height: 60px;
+      }
+    }
+  }
+}
