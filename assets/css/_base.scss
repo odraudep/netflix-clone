@@ -30,6 +30,14 @@ h1, h2 {
   font-size: 5rem;
 }
 
+a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 .container-email {
   p {
     margin-bottom: 2rem;
