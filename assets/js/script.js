@@ -7,11 +7,9 @@ faq_btn.forEach(eItem => {
     if (actived) {
       actived.classList.remove("active");
 
-      if (actived == eItem) {
-        eItem.classList.remove("active");
-      } else {
+      if (actived != eItem) {
         eItem.classList.add("active");
-      };
+      }
     } else {
       eItem.classList.add("active");
     };

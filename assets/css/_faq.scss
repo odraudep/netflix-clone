@@ -12,7 +12,7 @@
   .faq-accordion {
     width: 100%;
     max-width: 815px;
-    margin: 2rem 0;
+    margin: 6rem 0;
 
     .faq-btn, .faq-accordion-content {
       width: 100%;
@@ -47,7 +47,7 @@
 
     .faq-accordion-content {
       max-height: 0;
-      margin-bottom: 1rem;
+      margin-bottom: .8rem;
       overflow: hidden;
       transition: max-height .4s cubic-bezier(0.85, 0, 0.24, 1.06);
 
@@ -59,9 +59,5 @@
         }
       }
     }
-  }
-
-  .container-email {
-    margin-top: 1rem;
   }
 }
