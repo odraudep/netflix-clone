@@ -1,44 +1,7 @@
-$primaryColor: #E50914;
-$baseColor: #000000;
-$fontColor: #FFFFFF;
-
-*, *::before, *::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  outline: none;
-  font-family: 'Roboto', sans-serif;
-  color: $fontColor;
-}
-
-html {
-  font-size: 62.5%;
-}
-
-body {
-  max-width: 100%;
-  position: relative;
-  font-size: 1.6rem;
-  background-color: $baseColor;
-}
-
-section {
-  border-bottom: .8rem solid #222222;
-}
-
-h1, h2 {
-  font-size: 5rem;
-}
-
-a {
-  text-decoration: none;
-
-  &:hover {
-    text-decoration: underline;
-  }
-}
-
 .container-email {
+  width: 100%;
+  max-width: 680px;
+
   p {
     margin-bottom: 2rem;
     font-size: 1.9rem;
@@ -51,9 +14,12 @@ a {
     height: 60px;
 
     input[type="email"] {
-      min-width: 450px;
+      width: 100%;
       height: 100%;
       padding: 1.5rem 1rem;
+      border: none;
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
       font-size: 1.6rem;
       color: $baseColor;
     }
@@ -63,7 +29,8 @@ a {
       justify-content: center;
       align-items: center;
       height: 100%;
-      border-radius: 0;
+      border-radius: 0 4px 4px 0;
+      white-space: nowrap;
       font-size: 2.6rem;
 
       &:hover {

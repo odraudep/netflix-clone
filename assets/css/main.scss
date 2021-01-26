@@ -1,6 +1,14 @@
-@import 'base';
-@import 'navbar';
-@import 'hero';
-@import 'describe';
-@import 'faq';
-@import 'footer';
+// Utilities
+@import 'utilities/variables';
+
+// Componets
+@import 'components/reset';
+@import 'components/email';
+
+// Layout
+@import 'layout/navbar';
+@import 'layout/hero';
+@import 'layout/describe';
+@import 'layout/faq';
+@import 'layout/footer';
+@import 'layout/responsive';

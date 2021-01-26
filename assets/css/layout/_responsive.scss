@@ -1,0 +1,52 @@
+@media (max-width: 1125px) {
+  .describe {
+    grid-template-columns: 1fr;
+    padding: 7rem 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 786px) {
+  html {
+    font-size: 50%;
+  }
+
+  .hero-container {
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+
+  .container-email {
+    .container-email-form {
+      flex-direction: column;
+      height: auto;
+
+      .btn {
+        min-height: 40px;
+        margin-top: 1rem;
+        border-radius: 2px;
+        font-size: 1.6rem;
+      }
+    }
+  }
+
+  footer .footer-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  footer .footer-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 365px) {
+  footer{
+    padding-top: 5%;
+
+    .footer-list {
+     grid-template-columns: 1fr;
+   }
+  }
+}

@@ -1,13 +1,12 @@
 .describe-tv {
   .describe-media {
     img {
-      width: 530px;
+      max-width: 530px;
     }
 
     video {
-      width: 387px;
-      top: 83px;
-      left: 69px;
+      width: 73%;
+      top: 82px;
     }
   }
 }

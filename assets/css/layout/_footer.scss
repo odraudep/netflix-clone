@@ -72,23 +72,3 @@ footer {
     }
   }
 }
-
-@media (max-width: 940px) {
-  footer {
-    .footer-list {
-      grid-template-columns: repeat(3, 1fr);
-    }
-  }
-}
-
-@media (max-width: 650px) {
-  footer .footer-list {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 320px) {
-  footer .footer-list {
-    grid-template-columns: 1fr;
-  }
-}
