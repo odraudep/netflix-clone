@@ -1,12 +1,67 @@
 .faq {
-  padding: 7rem;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+  padding: 7rem 0;
 
   h2 {
     margin-bottom: .5em;
-    text-align: center;
   }
 
-  .faq-according {
+  .faq-accordion {
+    width: 100%;
+    max-width: 815px;
     margin: 2rem 0;
+
+    .faq-btn, .faq-accordion-content {
+      width: 100%;
+      background-color: #303030;
+      font-size: 2.6rem;
+    }
+
+    .faq-btn {
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: .1rem;
+      padding: 0 3rem;
+      border: none;
+      text-align: left;
+
+      .faq-btn-plus {
+        font-size: 6rem;
+        font-weight: 100;
+      }
+    }
+
+    .active .faq-btn-plus {
+      transform: rotate(45deg);
+    }
+
+    .active + .faq-accordion-content {
+      max-height: 1200px;
+      transition: max-height .4s cubic-bezier(0.85, 0, 0.24, 1.06);
+    }
+
+    .faq-accordion-content {
+      max-height: 0;
+      margin-bottom: 1rem;
+      overflow: hidden;
+      transition: max-height .4s cubic-bezier(0.85, 0, 0.24, 1.06);
+
+      div {
+        padding: 3rem;
+
+        p:not(:last-child) {
+          margin-bottom: 4rem;
+        }
+      }
+    }
+  }
+
+  .container-email {
+    margin-top: 1rem;
   }
 }

@@ -2,3 +2,12 @@
 @import 'describe-tv';
 @import 'describe-off';
 @import 'describe-every';
+
+
+@media (max-width: 855px) {
+  .describe {
+    grid-template-columns: 1fr;
+    padding: 7rem 0;
+    text-align: center;
+  }
+}
